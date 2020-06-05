@@ -1,0 +1,24 @@
+.btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.12rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  width: 20rem;
+  height: 4rem;
+  border: 0.2rem solid #1dd800;
+  color: #fff;
+  background-color: #1dd800;
+  transform: translateY(0);
+  cursor: pointer;
+  transition: all 0.3s linear;
+  outline: none;
+  
+  &:hover {
+    background-color: #1dd800;
+    color: #fff;
+  }
+}

@@ -1,0 +1,24 @@
+.country {
+  &__flag {
+    width: 100px;
+    height: auto;
+  }
+}
+
+.card {
+  cursor: pointer;
+  width: 15rem;
+  &__img {
+    width: 15rem;
+    height: auto;
+  }
+  &__heading {
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  &__link {
+    text-decoration: none;
+  }
+}

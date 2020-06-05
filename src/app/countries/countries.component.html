@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="auto-grid">
+    <a *ngFor="let country of showCountry" class="card__link" routerLink="/detail/{{country.name}}"  
+      >
+      <div
+        
+        class="card"
+        (click)="showCountryDetail(country)"
+      >
+        <img
+          class="card__img"
+          src="{{ country.flag }}"
+          alt="country flag"
+        />
+        <h2 class="card__heading">{{ country.name }}</h2>
+      </div>
+    </a>
+  </div>
+</div>
