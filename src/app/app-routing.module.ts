@@ -6,7 +6,7 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
 
 const routes: Routes = [
   {path: '', component: CountriesComponent},
-  {path: 'detail/:country', component: CountryDetailComponent}
+  {path: 'detail/:id', component: CountryDetailComponent}
 ];
 
 @NgModule({

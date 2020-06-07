@@ -1,11 +1,12 @@
 <h2>{{title}}</h2>
-<div>
-  <h2>Name: {{ country.name }}</h2>
-  <img src="{{ country.flag }}" alt="country flag" />
-  <p>Code: {{ country.alpha2Code }}</p>
-  <p>Region: {{ country.region }}</p>
-  <p>Capital City: {{ country.capital }}</p>
-  <p>Borders: {{ country.borders }}</p>
+<div class="country" *ngFor="let x of country">
+  <h2>Name: {{ x.name }}</h2>
+  <img class="country__flag" src="{{ x.flag }}" alt="country flag" />
+  <p>Code: {{ x.alpha2Code }}</p>
+  <p>Region: {{ x.region }}</p>
+  <p>GPS: {{ x.latlng }}</p>
+  <p>Capital City: {{ x.capital }}</p>
+  <p>Borders: {{ x.borders }}</p>
 </div>
-<button class="btn">Go Back</button>
+<button class="btn" (click)="goBack()">Go Back</button>
 
